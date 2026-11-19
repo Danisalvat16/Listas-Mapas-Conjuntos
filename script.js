@@ -220,7 +220,7 @@ function Ejercicio2() {
         break;
 
       case "E":
-        set_inscritos.clear();
+        set_inscritos = new Set();
         alert("Se han vaciado las inscripciones");
         break;
 
