@@ -215,8 +215,13 @@ function Ejercicio2() {
         break;
 
       case "D":
-        set_inscritos.forEach((alumno) => console.log(alumno));
-        alert("hay " + set_inscritos.size + " alumnos inscritos");
+        let listaAlumnos = "";
+        for (const alumno of set_inscritos) {
+          listaAlumnos += alumno + ", ";
+        }
+        alert(
+          "Hay " + set_inscritos.size + " alumnos inscritos:\n" + listaAlumnos,
+        );
         break;
 
       case "E":
